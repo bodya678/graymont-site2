@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graymont - Bohdan Ivaniuk</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      background: url('logo.png') center/contain no-repeat;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+    .logo-container {
+      position: relative;
+      z-index: 1;
+    }
+    .logo-container img {
+      height: 80px;
+    }
+    .logo-container h1 {
+      font-size: 3em;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #555;
+    }
+    .intro p {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+    .services li::before {
+      content: "\2714";
+      position: absolute;
+      left: 0;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    .contact p {
+      margin: 8px 0;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Graymont Logo" onerror="this.style.display='none'">
+      <h1>Graymont</h1>
+    </div>
+  </header>
+
+  <section class="section intro">
+    <h2>O nas</h2>
+    <p>Graymont to nowoczesna firma budowlana, która łączy jakość, terminowość i estetykę. Realizujemy projekty mieszkaniowe i inwestycyjne na terenie całej Polski.</p>
+  </section>
+
+  <section class="section services">
+    <h2>Nasze usługi</h2>
+    <ul>
+      <li>Remonty i wykończenia wnętrz</li>
+      <li>Kafelkowanie</li>
+      <li>Usługi demontażu</li>
+      <li>Elewacje i ocieplenia</li>
+      <li>Zarządzanie inwestycjami</li>
+    </ul>
+  </section>
+
+  <section class="section contact">
+    <h2>Kontakt</h2>
+    <p><strong>Telefon:</strong> +48 792 850 158</p>
+    <p><strong>Email:</strong> bohdanivaniukpl@gmail.com</p>
+    <p><strong>Właściciel:</strong> Bohdan Ivaniuk</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Graymont. Wszelkie prawa zastrzeżone.
+  </footer>
+
+</body>
+</html>
